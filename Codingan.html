@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Pengisian Identitas Diri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* black */
+            color: #fff; /* white */
+        }
+        #container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #333; /* dark gray */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ffcc00; /* gold */
+        }
+        #menu {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        #menu ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        #menu ul li a {
+            text-decoration: none;
+            color: #999; /* light gray */
+            font-weight: bold;
+            font-size: 18px;
+            color: #ffcc00; /* gold */
+        }
+        form {
+            padding: 20px;
+            background-color: #333; /* dark gray */
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            color: #ffcc00; /* gold */
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #666; /* medium gray */
+            background-color: #333; /* dark gray */
+            color: #fff; /* white */
+        }
+        input[type="submit"] {
+            background-color: #ffcc00; /* gold */
+            color: #000; /* black */
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #cc9900; /* darker gold */
+        }
+        #toolbar {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #toolbar button {
+            background-color: #ffcc00; /* gold */
+            color: #000; /* black */
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        #toolbar button:hover {
+            background-color: #cc9900; /* darker gold */
+        }
+        /* Set ukuran gambar ikon */
+        #toolbar button img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Aplikasi Pengisian Identitas Diri</h1>
+        <div id="menu">
+            <ul>
+                <li><a href="#">Identitas Diri</a></li>
+                <li><a href="#">Alamat</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </div>
+        <form action="#" method="post">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select name="jenis_kelamin" id="jenis_kelamin" required>
+                <option value="">Pilih Jenis Kelamin</option>
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select>
+            <label for="tanggal_lahir">Tanggal Lahir:</label>
+            <input type="text" id="tanggal_lahir" name="tanggal_lahir" placeholder="Contoh: 01/01/1990" required>
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat" required>
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="text" id="telepon" name="telepon" required>
+            <input type="submit" value="Simpan">
+        </form>
+        <div id="toolbar">
+            <button><img src="icon-gambar1.png" alt="Icon1"></button>
+            <button><img src="icon-gambar2.png" alt="Icon2"></button>
+            <!-- Tambahkan lebih banyak tombol atau tautan di sini sesuai kebutuhan -->
+        </div>
+    </div>
+</body>
+</html>
